@@ -10,3 +10,13 @@
     right: 0;
     width: 500px;
 }
+
+/* Why I Wrote This Book */
+.width-24 {
+    width: 100%;
+    max-width: 24%;
+}
+.width-90 {
+    width: 100%;
+    max-width: 69%;
+}
