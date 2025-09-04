@@ -41,7 +41,8 @@
 }
 @font-face {
   font-family : 'valkyregular';
-  src: url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff2') format('woff2'), url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff') format('woff');
+  src: url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff2') format('woff2'), 
+    url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff') format('woff');
   font-weight : normal;
   font-style : normal;
 }
