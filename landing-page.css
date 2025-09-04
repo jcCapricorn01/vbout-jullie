@@ -535,7 +535,7 @@ h2 {
 }
 
 @media only screen and (max-width: 1024px) {
-    .hero {
+    .vbt-lp .hero {
         height: calc(70vh - 110px);
     }
     .hero-inner-bg img {
@@ -546,7 +546,7 @@ h2 {
     }
 }
 @media only screen and (max-width: 767px) {
-    .hero {
+    .vbt-lp .hero {
         height: calc(60vh - 110px);
     }
     .hero-inner-bg img {
