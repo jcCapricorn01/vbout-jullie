@@ -456,6 +456,8 @@ ul.footer-nav li a {
     min-height: 500px;
     background-size: cover;
     background-image: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/hero-banner.jpg);
+    display: flex;
+    flex-direction: column;    
 }
 .vbt-lp .hero {
     height: calc(90vh - 110px);
