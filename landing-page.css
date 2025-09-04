@@ -1,8 +1,491 @@
 :root {
-    --color1: #506D8F;
-    --color2: #EDE9E6;
+    --color1: #506d8f;
+    --color2: #ede9e6;
+    --animate-duration: 700ms;
+    --site-text-color: #042f4f;
+    --btn-primary-color: #5286c2;
+    --btn-secondary-color: #f7ab92;
+    --btn-tertiary-color: #042f4f;
+    --site-subheading-color: #042f4f;
+    --site-subheading-color: #5286c2;
+    --site-lightblue-bg-color: #daebff;
 }
 
+@font-face {
+  font-family : 'Brittany Signature';
+  url('https : //app.vbout.com/files/12370/fonts/BrittanySignatureRegular.woff') format('woff');
+  font-style : normal;
+  font-weight : normal;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https : //app.vbout.com/files/12370/fonts/Archia-Regular.woff') format('woff');
+  font-style : normal;
+  font-weight : normal;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https : //app.vbout.com/files/12370/fonts/Archia-SemiBold.woff') format('woff');
+  font-style : normal;
+  font-weight : 500;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https : //app.vbout.com/files/12370/fonts/Archia-Medium.woff') format('woff');
+  font-style : normal;
+  font-weight : 600;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'valkyregular';
+  src: url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff2') format('woff2'), url('https : //assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff') format('woff');
+  font-weight : normal;
+  font-style : normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    color: var(--site-text-color);
+}
+p {
+    color: var(--site-text-color);
+}
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item.active .nav-link, .vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link : hover {
+    color: #daebff !important;
+}
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link.btn : hover {
+    color: var(--btn-primary-color) !important;
+}
+.testimonialSlider .slick-prev {
+    left: 0px;
+}
+.testimonialSlider .slick-next {
+    right: 0px;
+}
+.testimonialSlider {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+.navbar-nav .nav-link {
+    transition: all 0.2s ease-in-out;
+}
+@media (min-width: 992px) {
+    .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link {
+        background: #5286c2;
+    }
+    .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link : hover {
+        background: var(--btn-tertiary-color);
+        color: #ffffff !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media (max-width: 991px) {
+    .nav-item .btn-warning {
+        background-color: transparent;
+    }
+    .navbar-nav .nav-link {
+        text-align: right;
+    }
+    .vboutTheme_travel13_top_menu a.btn-arrow : after {
+        background: none;
+        width: auto;
+        padding: initial;
+        height: auto;
+        margin: auto;
+    }
+    .navbar-brand {
+        width: calc(100% - 75px);
+    }
+}
+.sub-heading {
+    color: #5286c2;
+    font-family: "EB Garamond", serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.heading,
+.postTitle {
+    font-family: "EB Garamond", serif;
+    color: #454545;
+}
+.textContent,
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #454545;
+}
+.testimonialContent {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.postLink {
+    color: #042f4f;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.postLink a {
+    color: #042f4f;
+    letter-spacing: 2px;
+}
+.slick-prev : before, .slick-next : before {
+    color: #ee9f8e !important;
+}
+a.btn-arrow {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+}
+a : not(.nav-link).btn-arrow : hover {
+    background-color: var(--btn-tertiary-color) !important;
+}
+.vbfs-submit {
+    position: relative;
+}
+.vbfs-submit : after {
+    content: "";
+    background: url(./white-arrow.png) no-repeat scroll center right transparent;
+    width: 49px;
+    height: 6px;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vbfs-submit : hover : after {
+    right: 3.5vw;
+}
+a.hover-to-darkblue-btn : hover {
+    background-color: var(--btn-tertiary-color) !important;
+}
+a.hover-to-primary-btn : hover {
+    background-color: var(--btn-primary-color) !important;
+}
+a.btn-arrow : hover : after {
+    transform: translateX(10px);
+}
+@media (max-width: 767px) {
+    .vboutTheme_event03_register_form_block div.vbfs-field label.error {
+        bottom: -18px;
+        z-index: 1;
+    }
+}
+.welcome-container {
+    position: relative;
+}
+ul.checklist {
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    position: relative;
+}
+ul.checklist li {
+    position: relative;
+    padding-bottom: 15px;
+    line-height: 2;
+}
+ul.checklist li : before {
+    content: "";
+    background-image: url("https : //assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    padding-right: 34px;
+    margin-right: 15px;
+}
+ul.checklist : after {
+    content: "";
+    background-color: #5286c2;
+    width: 121px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.topNum {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.book-details {
+    position: relative;
+}
+@media (min-width: 768px) {
+    .innerDiv {
+        margin-left: -50px;
+    }
+}
+@media (min-width: 576px) {
+    .book-details : before {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 237px;
+        width: 100%;
+        height: 187px;
+        position: absolute;
+        top: -70px;
+        right: 30px;
+    }
+    .book-details : after {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 280px;
+        width: 100%;
+        height: 225px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.testimonialSection {
+    position: relative;
+}
+.testimonialColumn {
+    position: relative;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    padding-top: 0px;
+}
+.testimonialSection : before, .testimonialSection : after {
+    content: "";
+}
+.aboutSection {
+    position: relative;
+}
+@media (min-width: 576px) {
+    .testimonial-wrapper : after {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-2.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 216px;
+        width: 100%;
+        height: 176px;
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+}
+.waitlistDiv.vboutTheme_master02.vboutTheme_master02_discount {
+    background: none;
+    padding-bottom: 0;
+}
+ul.checklist {
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    position: relative;
+}
+ul.checklist li {
+    position: relative;
+    padding-bottom: 15px;
+    line-height: 2;
+}
+ul.checklist li : before {
+    content: "";
+    background-image: url("https : //assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    padding-right: 34px;
+    margin-right: 15px;
+}
+ul.checklist : after {
+    content: "";
+    background-color: #5286c2;
+    width: 121px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.topNum {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.book-details {
+    position: relative;
+}
+@media (min-width: 768px) {
+    .innerDiv {
+        margin-left: -50px;
+    }
+}
+@media (min-width: 576px) {
+    .book-details : before {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 237px;
+        width: 100%;
+        height: 187px;
+        position: absolute;
+        top: -70px;
+        right: 30px;
+    }
+    .book-details : after {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 280px;
+        width: 100%;
+        height: 225px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.footer-top {
+    padding-block: 1rem;
+}
+.footer-bottom {
+    padding-block: 1rem;
+}
+ul.footer-nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+}
+ul.footer-nav li a {
+    color: var(--site-text-color);
+    font-size: 16px;
+}
+.footer-logo-col {
+    display: flex;
+    align-items: center;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    font-size: 14px;
+}
+.vbtb-consultant01-WholeFormBlock .vbfs-submit : after {
+    background: none;
+}
+.footer-wrapper {
+    position: relative;
+}
+@media (min-width: 768px) {
+    .row-border-tb {
+        border-top: 2px solid #daebff;
+        border-bottom: 2px solid #daebff;
+    }
+    .footer-logo-col,
+    .footer-content-col {
+        border-right: 2px solid #daebff;
+    }
+    .footer-top {
+        border-bottom: 2px solid #daebff;
+    }
+}
+@media (max-width: 767px) {
+    .center-mb {
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    ul.footer-nav {
+        justify-content: center;
+    }
+    .footer-logo-col {
+        justify-content: center;
+    }
+}
+@media (min-width: 576px) {
+    .footer-wrapper : after {
+        content: "";
+        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-6.png)
+            no-repeat scroll 0 0 transparent;
+        max-width: 159px;
+        width: 100%;
+        height: 242px;
+        position: absolute;
+        top: -70px;
+        right: 30px;
+    }
+}
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item.active .nav-link {
+    color: #DAEBFF;
+}
+
+.hero {
+    height: calc(90vh - 110px);
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(hero-banner.jpg);
+}
+.hero-inner-bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+}
+h1.heading {
+    font-size: clamp(3.125rem, 5.208vw + 2.083rem, 6.25rem);
+}
+h1.heading,
+.heading-1 {
+    font-family: "valkyregular";
+}
+.heading-2 {
+    font-family: "EB Garamond", serif;
+}
+.h2,
+h2 {
+    font-size: clamp(2rem, 1.667vw + 1.667rem, 3rem);
+}
+.heading.author {
+    font-size: clamp(1.25rem, 1.042vw + 1.042rem, 1.875rem);
+}
 .text-overlay .heading {
     color: #fff;
     position: absolute;
@@ -10,13 +493,94 @@
     right: 0;
     width: 500px;
 }
-
-/* Why I Wrote This Book */
+.about-inner-row {
+    margin-top: -180px;
+}
+.about-author .sub-heading,
+.about-author .heading {
+    color: #454545;
+}
 .width-24 {
     width: 100%;
     max-width: 24%;
+    margin: 0 auto;
 }
 .width-69 {
     width: 100%;
     max-width: 69%;
+    margin: 0 auto;
+}
+.stay-in-touch {
+    margin-left: -100px;
+    z-index: 2;
+}
+.blurb-content {
+    background: #ede9e6;
+    padding: 50px 40px;
+}
+.blurb-content * {
+    color: #000;
+}
+.blurb-content a {
+    text-decoration: underline;
+}
+.blurb-content a : hover {
+    color: #5286c2;
+}
+.padding-50 {
+    padding: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: calc(70vh - 110px);
+    }
+    .hero-inner-bg img {
+        max-width: 400px;
+    }
+    .width-24 {
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero {
+        height: calc(60vh - 110px);
+    }
+    .hero-inner-bg img {
+        max-width: 350px;
+    }
+    #cta-container {
+        text-align: center;
+    }
+    .padding-50 {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+    .text-overlay .heading {
+        width: 100%;
+        text-align: center;
+    }
+    .width-24,
+    .width-69 {
+        max-width: 100%;
+    }
+    .stay-in-touch {
+        margin-left: 0px;
+    }
+    .blurb-content {
+        padding: 30px 25px;
+    }
+    #cta-container img {
+        max-width: 300px !important;
+    }
+    .about-book img,
+    .book_is_for_you img,
+    .about-author img {
+        max-width: 400px !important;
+    }
+    .about-author .sub-heading,
+    .about-author .heading {
+        color: #ffffff;
+    }
 }
