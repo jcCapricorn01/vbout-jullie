@@ -561,6 +561,11 @@ h2 {
     max-width: 150px;
 }
 
+#cta-container .vbfs-form {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
 @media only screen and (max-width: 1024px) {
     .vbt-lp .hero {
         height: calc(70vh - 110px);
