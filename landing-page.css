@@ -1,52 +1,3 @@
-:root {
-    --color1: #506d8f;
-    --color2: #ede9e6;
-    --animate-duration: 700ms;
-    --site-text-color: #042f4f;
-    --btn-primary-color: #5286c2;
-    --btn-secondary-color: #f7ab92;
-    --btn-tertiary-color: #042f4f;
-    --site-subheading-color: #042f4f;
-    --site-subheading-color: #5286c2;
-    --site-lightblue-bg-color: #daebff;
-}
-
-@font-face {
-  font-family : 'Brittany Signature';
-  url('https://app.vbout.com/files/12370/fonts/BrittanySignatureRegular.woff') format('woff');
-  font-style : normal;
-  font-weight : normal;
-  text-rendering : optimizeLegibility;
-}
-@font-face {
-  font-family : 'Archia';
-  url('https://app.vbout.com/files/12370/fonts/Archia-Regular.woff') format('woff');
-  font-style : normal;
-  font-weight : normal;
-  text-rendering : optimizeLegibility;
-}
-@font-face {
-  font-family : 'Archia';
-  url('https://app.vbout.com/files/12370/fonts/Archia-SemiBold.woff') format('woff');
-  font-style : normal;
-  font-weight : 500;
-  text-rendering : optimizeLegibility;
-}
-@font-face {
-  font-family : 'Archia';
-  url('https://app.vbout.com/files/12370/fonts/Archia-Medium.woff') format('woff');
-  font-style : normal;
-  font-weight : 600;
-  text-rendering : optimizeLegibility;
-}
-@font-face {
-  font-family : 'valkyregular';
-  src: url('https://assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff2') format('woff2'), 
-    url('https://assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff') format('woff');
-  font-weight : normal;
-  font-style : normal;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -136,7 +87,9 @@ p {
 .testimonialContent {
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
-    font-style: normal;
+    font-style: italic;
+    font-size: clamp(1.563rem, 1.42vw + 1.278rem, 2.188rem);
+    color: #fff;
 }
 .postLink {
     color: #042f4f;
@@ -275,7 +228,8 @@ ul.checklist : after {
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
-    padding-top: 0px;
+    padding-top: clamp(30px, 5vw, 80px);
+    padding-bottom: clamp(30px, 5vw, 80px);
 }
 .testimonialSection : before, .testimonialSection : after {
     content: "";
@@ -387,7 +341,7 @@ ul.footer-nav {
 }
 ul.footer-nav li a {
     color: var(--site-text-color);
-    font-size: 16px;
+    font-size: 20px;
 }
 .footer-logo-col {
     display: flex;
@@ -399,7 +353,7 @@ ul.footer-nav li a {
     align-items: center;
 }
 .copyright {
-    font-size: 14px;
+    font-size: 20px;
 }
 .vbtb-consultant01-WholeFormBlock .vbfs-submit : after {
     background: none;
@@ -453,14 +407,10 @@ ul.footer-nav li a {
 }
 
 .hero {
-    min-height: 500px;
-    background-size: cover;
-    background-image: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/hero-banner.jpg);
-    display: flex;
-    flex-direction: column;    
-}
-.vbt-lp .hero {
     height: calc(90vh - 110px);
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(hero-banner.jpg);
 }
 .hero-inner-bg img {
     position: absolute;
@@ -498,9 +448,7 @@ h2 {
     right: 0;
     width: 500px;
 }
-.about-inner-row {
-    margin-top: -180px;
-}
+
 .about-author .sub-heading,
 .about-author .heading {
     color: #454545;
@@ -515,13 +463,11 @@ h2 {
     max-width: 69%;
     margin: 0 auto;
 }
-.stay-in-touch {
-    margin-left: -100px;
-    z-index: 2;
-}
+
 .blurb-content {
     background: #ede9e6;
     padding: 50px 40px;
+
 }
 .blurb-content * {
     color: #000;
@@ -536,8 +482,41 @@ h2 {
     padding: 50px;
 }
 
+/* MISC */
+.about-book, .about-book .container, .why-i-wrote-this-book, .why-i-wrote-this-book .container, .book_is_for_you {position: relative;}
+.why-i-wrote-this-book .container, .about-book .container {z-index: 2;}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.why-i-wrote-this-book {
+  padding-top: clamp(40px, 5vw, 60px);
+  padding-bottom: clamp(30px, 5vw, 60px);    
+}
+.book_is_for_you {
+  padding-top: clamp(40px, 5vw, 80px);    
+  padding-bottom: clamp(30px, 5vw, 80px);     
+}
+.stay-in-touch {
+  padding-top: clamp(50px, 5vw, 70px);
+  padding-bottom: clamp(0px, 5vw, 70px);    
+}
+.about-book {
+  padding-top: clamp(30px, 5vw, 70px);
+  padding-bottom: clamp(3px, 5vw, 70px);       
+}
+
+.butterfly {
+    position: absolute;
+    bottom: -40px;
+    right: -60px;
+    z-index: 5;
+    max-width: 150px;
+}
+
 @media only screen and (max-width: 1024px) {
-    .vbt-lp .hero {
+    .hero {
         height: calc(70vh - 110px);
     }
     .hero-inner-bg img {
@@ -547,8 +526,112 @@ h2 {
         max-width: 50%;
     }
 }
+
+@media (max-width: 991.98px) { /* adjust breakpoint if needed */
+  .navbar-collapse {
+    padding: 20px;    
+    position: absolute;
+    top: 100%; /* places it below navbar */
+    left: 0;
+    width: 100%;
+    background: rgb(80 109 143 / 95%); /* optional for readability */
+    z-index: 999;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .about-inner-row {
+        margin-top: -180px;
+    }
+    .blurb-content {
+        margin-left: -100px;
+        width: calc(100% + 100px);    
+    }    
+
+    /* MISC */
+
+    .about-book:before {
+        content: '';
+        background: url(graphic1.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 160px;
+        height: 313px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .about-book:after {
+        content: '';
+        background: url(butterfly1.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 219px;
+        height: 590px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .why-i-wrote-this-book:before {
+        content: '';
+        background: url(butterfly3.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 177px;
+        height: 152px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+    }
+    .why-i-wrote-this-book:after {
+        content: '';
+        background: url(butterfly4.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 142px;
+        height: 185px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }  
+ 
+    .book_is_for_you:after {
+        content: '';
+        background: url(butterfly5.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 183px;
+        height: 282px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    /*
+    #cta-container:after {
+        content: '';
+        background: url(butterfly2.png) no-repeat scroll 0 0 transparent;
+        display: block;
+        width: 100%;
+        max-width: 141px;
+        height: 127px;
+        position: absolute;
+        right: 10%;
+        bottom: 0px;        
+    }
+    */
+
+}
+
+
+
 @media only screen and (max-width: 767px) {
-    .vbt-lp .hero {
+    .butterflies {display: none;}
+    .hero {
         height: calc(60vh - 110px);
     }
     .hero-inner-bg img {
@@ -570,9 +653,7 @@ h2 {
     .width-69 {
         max-width: 100%;
     }
-    .stay-in-touch {
-        margin-left: 0px;
-    }
+
     .blurb-content {
         padding: 30px 25px;
     }
