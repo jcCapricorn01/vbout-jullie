@@ -1,3 +1,52 @@
+:root {
+    --color1: #506d8f;
+    --color2: #ede9e6;
+    --animate-duration: 700ms;
+    --site-text-color: #042f4f;
+    --btn-primary-color: #5286c2;
+    --btn-secondary-color: #f7ab92;
+    --btn-tertiary-color: #042f4f;
+    --site-subheading-color: #042f4f;
+    --site-subheading-color: #5286c2;
+    --site-lightblue-bg-color: #daebff;
+}
+
+@font-face {
+  font-family : 'Brittany Signature';
+  url('https://app.vbout.com/files/12370/fonts/BrittanySignatureRegular.woff') format('woff');
+  font-style : normal;
+  font-weight : normal;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https://app.vbout.com/files/12370/fonts/Archia-Regular.woff') format('woff');
+  font-style : normal;
+  font-weight : normal;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https://app.vbout.com/files/12370/fonts/Archia-SemiBold.woff') format('woff');
+  font-style : normal;
+  font-weight : 500;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'Archia';
+  url('https://app.vbout.com/files/12370/fonts/Archia-Medium.woff') format('woff');
+  font-style : normal;
+  font-weight : 600;
+  text-rendering : optimizeLegibility;
+}
+@font-face {
+  font-family : 'valkyregular';
+  src: url('https://assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff2') format('woff2'), 
+    url('https://assets.vbt.io/public/files/12370/julliec_assets/valkyregular-webfont.woff') format('woff');
+  font-weight : normal;
+  font-style : normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
