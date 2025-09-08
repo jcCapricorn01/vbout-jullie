@@ -407,10 +407,9 @@ ul.footer-nav li a {
 }
 
 .hero {
-    height: calc(90vh - 110px);
     min-height: 400px;
     background-size: cover;
-    background-image: url(hero-banner.jpg);
+    background-image: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/hero-banner.jpg);
 }
 .hero-inner-bg img {
     position: absolute;
@@ -420,6 +419,9 @@ ul.footer-nav li a {
     max-width: 500px;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+.vbt-lp .hero {
+    height: calc(90vh - 110px);    
 }
 .vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link {
     font-size: 20px;
