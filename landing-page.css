@@ -677,6 +677,7 @@ h2 {
 
 @media only screen and (max-width: 767px) {
     .butterflies {display: none;}
+    .testimonialSlider p, .testimonialSlider h6 {text-align:center;}
     .vbt-lp .hero {
         height: calc(60vh - 110px);
     }
