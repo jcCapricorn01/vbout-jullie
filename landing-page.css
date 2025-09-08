@@ -162,7 +162,7 @@ ul.checklist li {
 }
 ul.checklist li : before {
     content: "";
-    background-image: url("https : //assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
+    background-image: url("https://assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: scroll;
@@ -198,7 +198,7 @@ ul.checklist : after {
 @media (min-width: 576px) {
     .book-details : before {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
             no-repeat scroll 0 0 transparent;
         max-width: 237px;
         width: 100%;
@@ -209,7 +209,7 @@ ul.checklist : after {
     }
     .book-details : after {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
             no-repeat scroll 0 0 transparent;
         max-width: 280px;
         width: 100%;
@@ -240,7 +240,7 @@ ul.checklist : after {
 @media (min-width: 576px) {
     .testimonial-wrapper : after {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-2.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-2.png)
             no-repeat scroll 0 0 transparent;
         max-width: 216px;
         width: 100%;
@@ -268,7 +268,7 @@ ul.checklist li {
 }
 ul.checklist li : before {
     content: "";
-    background-image: url("https : //assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
+    background-image: url("https://assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: scroll;
@@ -304,7 +304,7 @@ ul.checklist : after {
 @media (min-width: 576px) {
     .book-details : before {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
             no-repeat scroll 0 0 transparent;
         max-width: 237px;
         width: 100%;
@@ -315,7 +315,7 @@ ul.checklist : after {
     }
     .book-details : after {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
             no-repeat scroll 0 0 transparent;
         max-width: 280px;
         width: 100%;
@@ -392,7 +392,7 @@ ul.footer-nav li a {
 @media (min-width: 576px) {
     .footer-wrapper : after {
         content: "";
-        background: url(https : //assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-6.png)
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-6.png)
             no-repeat scroll 0 0 transparent;
         max-width: 159px;
         width: 100%;
@@ -555,7 +555,7 @@ h2 {
 
     .about-book:before {
         content: '';
-        background: url(graphic1.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/graphic1.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 160px;
@@ -566,7 +566,7 @@ h2 {
     }
     .about-book:after {
         content: '';
-        background: url(butterfly1.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly1.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 219px;
@@ -578,7 +578,7 @@ h2 {
 
     .why-i-wrote-this-book:before {
         content: '';
-        background: url(butterfly3.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly3.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 177px;
@@ -590,7 +590,7 @@ h2 {
     }
     .why-i-wrote-this-book:after {
         content: '';
-        background: url(butterfly4.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly4.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 142px;
@@ -602,7 +602,7 @@ h2 {
  
     .book_is_for_you:after {
         content: '';
-        background: url(butterfly5.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly5.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 183px;
@@ -614,7 +614,7 @@ h2 {
     /*
     #cta-container:after {
         content: '';
-        background: url(butterfly2.png) no-repeat scroll 0 0 transparent;
+        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly2.png) no-repeat scroll 0 0 transparent;
         display: block;
         width: 100%;
         max-width: 141px;
