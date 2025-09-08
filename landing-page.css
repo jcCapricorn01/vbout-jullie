@@ -82,6 +82,10 @@ p {
 .navbar-nav .nav-link {
     transition: all 0.2s ease-in-out;
 }
+.testimonialSlider p, .testimonialSlider h6 {
+    font-family: "Cormorant Garamond", serif;    
+    color: #fff;
+}
 @media (min-width: 992px) {
     .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link {
         background: #5286c2;
