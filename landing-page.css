@@ -17,7 +17,7 @@ p {
 .vboutTheme_travel13_top_menu .navbar-nav .nav-item.active .nav-link, .vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link : hover {
     color: #daebff !important;
 }
-.vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link.btn : hover {
+.vboutTheme_travel13_top_menu .navbar-nav .nav-item .nav-link.btn:hover {
     color: var(--btn-primary-color) !important;
 }
 .testimonialSlider .slick-prev {
@@ -37,7 +37,7 @@ p {
     .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link {
         background: #5286c2;
     }
-    .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link : hover {
+    .vboutTheme_travel13_top_menu .navbar-nav .nav-item .btn-brown.nav-link:hover {
         background: var(--btn-tertiary-color);
         color: #ffffff !important;
     }
@@ -53,7 +53,7 @@ p {
     .navbar-nav .nav-link {
         text-align: right;
     }
-    .vboutTheme_travel13_top_menu a.btn-arrow : after {
+    .vboutTheme_travel13_top_menu a.btn-arrow:after {
         background: none;
         width: auto;
         padding: initial;
@@ -102,7 +102,7 @@ p {
     color: #042f4f;
     letter-spacing: 2px;
 }
-.slick-prev : before, .slick-next : before {
+.slick-prev:before, .slick-next:before {
     color: #ee9f8e !important;
 }
 a.btn-arrow {
@@ -110,13 +110,13 @@ a.btn-arrow {
     transition: all 0.3s ease-in-out;
     color: #ffffff;
 }
-a : not(.nav-link).btn-arrow : hover {
+a:not(.nav-link).btn-arrow:hover {
     background-color: var(--btn-tertiary-color) !important;
 }
 .vbfs-submit {
     position: relative;
 }
-.vbfs-submit : after {
+.vbfs-submit:after {
     content: "";
     background: url(./white-arrow.png) no-repeat scroll center right transparent;
     width: 49px;
@@ -127,16 +127,16 @@ a : not(.nav-link).btn-arrow : hover {
     top: 50%;
     transform: translateY(-50%);
 }
-.vbfs-submit : hover : after {
+.vbfs-submit:hover:after {
     right: 3.5vw;
 }
-a.hover-to-darkblue-btn : hover {
+a.hover-to-darkblue-btn:hover {
     background-color: var(--btn-tertiary-color) !important;
 }
-a.hover-to-primary-btn : hover {
+a.hover-to-primary-btn:hover {
     background-color: var(--btn-primary-color) !important;
 }
-a.btn-arrow : hover : after {
+a.btn-arrow:hover:after {
     transform: translateX(10px);
 }
 @media (max-width: 767px) {
@@ -160,7 +160,7 @@ ul.checklist li {
     padding-bottom: 15px;
     line-height: 2;
 }
-ul.checklist li : before {
+ul.checklist li:before {
     content: "";
     background-image: url("https://assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ ul.checklist li : before {
     padding-right: 34px;
     margin-right: 15px;
 }
-ul.checklist : after {
+ul.checklist:after {
     content: "";
     background-color: #5286c2;
     width: 121px;
@@ -196,7 +196,7 @@ ul.checklist : after {
     }
 }
 @media (min-width: 576px) {
-    .book-details : before {
+    .book-details:before {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
             no-repeat scroll 0 0 transparent;
@@ -207,7 +207,7 @@ ul.checklist : after {
         top: -70px;
         right: 30px;
     }
-    .book-details : after {
+    .book-details:after {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
             no-repeat scroll 0 0 transparent;
@@ -231,14 +231,14 @@ ul.checklist : after {
     padding-top: clamp(30px, 5vw, 80px);
     padding-bottom: clamp(30px, 5vw, 80px);
 }
-.testimonialSection : before, .testimonialSection : after {
+.testimonialSection:before, .testimonialSection:after {
     content: "";
 }
 .aboutSection {
     position: relative;
 }
 @media (min-width: 576px) {
-    .testimonial-wrapper : after {
+    .testimonial-wrapper:after {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-2.png)
             no-repeat scroll 0 0 transparent;
@@ -266,7 +266,7 @@ ul.checklist li {
     padding-bottom: 15px;
     line-height: 2;
 }
-ul.checklist li : before {
+ul.checklist li:before {
     content: "";
     background-image: url("https://assets.vbt.io/public/files/12370/julliec_assets/checklist.png");
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ ul.checklist li : before {
     padding-right: 34px;
     margin-right: 15px;
 }
-ul.checklist : after {
+ul.checklist:after {
     content: "";
     background-color: #5286c2;
     width: 121px;
@@ -302,7 +302,7 @@ ul.checklist : after {
     }
 }
 @media (min-width: 576px) {
-    .book-details : before {
+    .book-details:before {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-1.png)
             no-repeat scroll 0 0 transparent;
@@ -313,7 +313,7 @@ ul.checklist : after {
         top: -70px;
         right: 30px;
     }
-    .book-details : after {
+    .book-details:after {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-4.png)
             no-repeat scroll 0 0 transparent;
@@ -355,7 +355,7 @@ ul.footer-nav li a {
 .copyright {
     font-size: 20px;
 }
-.vbtb-consultant01-WholeFormBlock .vbfs-submit : after {
+.vbtb-consultant01-WholeFormBlock .vbfs-submit:after {
     background: none;
 }
 .footer-wrapper {
@@ -390,7 +390,7 @@ ul.footer-nav li a {
     }
 }
 @media (min-width: 576px) {
-    .footer-wrapper : after {
+    .footer-wrapper:after {
         content: "";
         background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-6.png)
             no-repeat scroll 0 0 transparent;
@@ -477,7 +477,7 @@ h2 {
 .blurb-content a {
     text-decoration: underline;
 }
-.blurb-content a : hover {
+.blurb-content a:hover {
     color: #5286c2;
 }
 .padding-50 {
