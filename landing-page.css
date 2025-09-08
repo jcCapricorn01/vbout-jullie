@@ -389,19 +389,7 @@ ul.footer-nav li a {
         justify-content: center;
     }
 }
-@media (min-width: 576px) {
-    .footer-wrapper:after {
-        content: "";
-        background: url(https://assets.vbt.io/public/files/13212/Landing_Page_Assets/butterfly-6.png)
-            no-repeat scroll 0 0 transparent;
-        max-width: 159px;
-        width: 100%;
-        height: 242px;
-        position: absolute;
-        top: -70px;
-        right: 30px;
-    }
-}
+
 .vboutTheme_travel13_top_menu .navbar-nav .nav-item.active .nav-link {
     color: #DAEBFF;
 }
